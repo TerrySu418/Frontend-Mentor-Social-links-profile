@@ -1,3 +1,4 @@
+import avatarImage from './assets/avatar-jessica.jpeg'
 
 function App() {
   const socialLinks = [
@@ -14,9 +15,9 @@ function App() {
      <div className="bg-gray-800 w-3/5 sm:w-[400px] md:w-[500px] shadow-sm rounded-xl"> 
       <div className="flex flex-col items-center justify-center h-full gap-5">
           <img 
-            src="/src/assets/avatar-jessica.jpeg" 
+            src={avatarImage} 
             alt="Jessica Randall" 
-            className="w-[88px] h-[88px] rounded-full mb-6"
+            className="w-[88px] h-[88px] rounded-full mt-6"
           />
           <h1 className="text-white font-bold text-xl">Jessica Randall</h1>
           <h2 className="text-green">London, United Kingdom</h2>
