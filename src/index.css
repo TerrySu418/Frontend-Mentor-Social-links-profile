@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    
+    background-color: black;
+  }
+}
+
+@theme {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%)
+}
+
+@layer utilities { 
+
+  .info-button {
+    @apply text-[14px] p-2 rounded-xl bg-gray-700 
+           w-3/5 md:w-3/5
+           flex justify-center text-white
+           hover:bg-green hover:text-gray-900  /* Hover effect */
+           transition-colors duration-300
+  }
+
+
+}
